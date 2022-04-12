@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 0px 3px 4px lighten(black, 50%);
+  padding: .8rem;
+  border-radius: 10px;
+  background-color: white;
+
+  &:hover {
+    box-shadow: 0px 3px 5px lighten(black, 40%);
+  }
+
+  .card-img {
+    width: 300px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+
+    h2, h3 {
+      color: #f76c6c;
+      margin: .8rem;
+
+    }
+
+    .city {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .skills-list {
+      list-style: none;
+      display: flex;
+      gap: .5rem;
+      padding: 0;
+
+      li {
+        border: 1px solid #f76c6c;
+        padding: .3rem;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        &:focus, &:hover {
+          color: #f76c6c;
+        }
+
+        span {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          background-color: grey;
+          border-radius: 50%;
+          height: 20px;
+          width: 20px;
+          padding: 0.2rem;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .deleteButton {
+    width: 30px;
+    background-color: #f76c6c;
+    border:none;
+    padding: .5rem;
+    border-radius: 8px;
+    color: white;
+    align-self: end;
+    font-weight: bold;
+
+    &:hover, &:focus {
+      background-color: darken(#f76c6c, 20%);
+    }
+  }
+}

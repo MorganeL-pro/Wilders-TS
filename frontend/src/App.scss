@@ -1,0 +1,26 @@
+@use './components/Header/Header.scss';
+@use './components/WilderCard/WilderCard.scss';
+@use './components/Form/Form.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
